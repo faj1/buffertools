@@ -33,7 +33,7 @@ class CachingTypeFactory extends TypeFactory
     public function uint8(): Uint8
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint8(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -46,10 +46,11 @@ class CachingTypeFactory extends TypeFactory
     public function uint8le(): Uint8
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint8le(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
+
 
     /**
      * Add a Uint16 serializer to the template
@@ -59,7 +60,7 @@ class CachingTypeFactory extends TypeFactory
     public function uint16(): Uint16
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint16(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -72,10 +73,11 @@ class CachingTypeFactory extends TypeFactory
     public function uint16le(): Uint16
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint16le(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
+
 
     /**
      * Add a Uint32 serializer to the template
@@ -85,7 +87,7 @@ class CachingTypeFactory extends TypeFactory
     public function uint32(): Uint32
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint32(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -98,7 +100,7 @@ class CachingTypeFactory extends TypeFactory
     public function uint32le(): Uint32
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint32le(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -111,10 +113,11 @@ class CachingTypeFactory extends TypeFactory
     public function uint64(): Uint64
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint64(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
+
 
     /**
      * Add a little-endian Uint64 serializer to the template
@@ -124,7 +127,7 @@ class CachingTypeFactory extends TypeFactory
     public function uint64le(): Uint64
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -162,7 +165,7 @@ class CachingTypeFactory extends TypeFactory
     public function uint256(): Uint256
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -175,7 +178,7 @@ class CachingTypeFactory extends TypeFactory
     public function uint256le(): Uint256
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -188,7 +191,7 @@ class CachingTypeFactory extends TypeFactory
     public function int8(): Int8
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -201,7 +204,7 @@ class CachingTypeFactory extends TypeFactory
     public function int8le(): Int8
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -214,7 +217,7 @@ class CachingTypeFactory extends TypeFactory
     public function int16(): Int16
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -227,7 +230,7 @@ class CachingTypeFactory extends TypeFactory
     public function int16le(): Int16
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -240,7 +243,7 @@ class CachingTypeFactory extends TypeFactory
     public function int32(): Int32
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -253,7 +256,7 @@ class CachingTypeFactory extends TypeFactory
     public function int32le(): Int32
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -266,7 +269,7 @@ class CachingTypeFactory extends TypeFactory
     public function int64(): Int64
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -279,7 +282,7 @@ class CachingTypeFactory extends TypeFactory
     public function int64le(): Int64
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -292,7 +295,7 @@ class CachingTypeFactory extends TypeFactory
     public function int128(): Int128
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -305,7 +308,7 @@ class CachingTypeFactory extends TypeFactory
     public function int128le(): Int128
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -318,7 +321,7 @@ class CachingTypeFactory extends TypeFactory
     public function int256(): Int256
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -331,7 +334,7 @@ class CachingTypeFactory extends TypeFactory
     public function int256le(): Int256
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -344,7 +347,7 @@ class CachingTypeFactory extends TypeFactory
     public function varint(): VarInt
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -357,7 +360,7 @@ class CachingTypeFactory extends TypeFactory
     public function varstring(): VarString
     {
         if (!isset($this->cache[__FUNCTION__])) {
-            $this->cache[__FUNCTION__] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__];
     }
@@ -372,7 +375,7 @@ class CachingTypeFactory extends TypeFactory
     public function bytestring(int $length): ByteString
     {
         if (!isset($this->cache[__FUNCTION__ . $length])) {
-            $this->cache[__FUNCTION__ . $length] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__ . $length] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__ . $length];
     }
@@ -387,7 +390,7 @@ class CachingTypeFactory extends TypeFactory
     public function bytestringle(int $length): ByteString
     {
         if (!isset($this->cache[__FUNCTION__ . $length])) {
-            $this->cache[__FUNCTION__ . $length] = call_user_func_array(['parent', __FUNCTION__], func_get_args());
+            $this->cache[__FUNCTION__ . $length] = parent::uint128(...func_get_args());
         }
         return $this->cache[__FUNCTION__ . $length];
     }
