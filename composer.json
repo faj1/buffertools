@@ -1,5 +1,5 @@
 {
-  "name": "bitwasp/buffertools",
+  "name": "faj1/buffertools",
   "description": "Toolbox for working with binary and hex data. Similar to NodeJS Buffer.",
   "license": "MIT",
   "authors": [
@@ -23,11 +23,11 @@
     }
   },
   "require": {
-    "php-64bit": ">=7.0.0"
+    "php-64bit": ">=8.0.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^6.0",
+    "phpunit/phpunit": "^11.4.3",
     "squizlabs/php_codesniffer": "~2.0",
-    "phpstan/phpstan": "v0.9.x"
+    "phpstan/phpstan": "2.0.x-dev"
   }
 }
